@@ -8,7 +8,7 @@ var cheatsToPatch = new List<Cheat>()
         Instructions = new List<Instruction>
         {
             new() {
-                Address = 0x14015f190UL, // Address of the instruction to patch (taken from Ghidra)
+                Address = 0x140163480UL, // Address of the instruction to patch (taken from Ghidra)
                 Bytes = [0x90, 0x90, 0x90, 0x90, 0x90] // 0x90 == NOP instruction - 5 NOPs == 5 bytes (instruction we are replacing is 5 bytes long)
             },
         },
